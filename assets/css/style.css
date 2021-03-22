@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+p{
+  color: #000;
+}
+a {
+  color: #47b2e4;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: linear-gradient(to right, #ffe259, #ffa751);
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #e49503;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* -----hero------- */
+#hero {
+  width: 100%;
+  /* height: 100vh; */
+  background: url(../img/hero.jpg) top center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 20px;
+}
+#hero h1 {
+  margin: 0;
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+#hero h2 {
+  color: #fff;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+.btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: #F7941D;
+  border: 2px solid #F7941D;
+}
+.btn-get-started:hover{
+  color: #fff;
+}
+#hero .address-txt{
+  color:#fff;
+  margin-right: 0.895px;
+  font-size: 16px;
+}
+#hero .mail-txt{
+  color:#fff;
+  margin-right: 0.895px;
+  font-size: 16px;
+}
+#hero .phone-txt{
+  color:#fff;
+  margin-right: 0.895px;
+  font-size: 16px;
+}
+#hero .top-bar{
+  border: 1px solid #fff;
+}
+#hero .col-lg-3{
+  border-right: 1px solid #ffff;
+}
+#hero .logo-section{
+  padding-top: 50px;
+  padding-bottom:100px;
+}
+#hero .card .number{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+#hero .card-txt{
+color: #fff;
+font-size: 1.2rem;
+text-align: left;
+font-weight: 600;
+}
+#hero .card{
+  border: none;
+  border-radius: 0%;
+  color: #fff;
+  background-color: #10507C;
+} 
+#hero .card-deck{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+#hero .cfluid2{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+/* =========================== */
+
+#service-section{
+  padding: 50px 0;
+}
+.section-title p{
+    font-size: 3.2rem;
+    color: #F58521;
+    line-height: 1.1;
+}
+#service-section .service-card{
+  padding: 50px 0;
+}
+#service-section .service-card .card{
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+}
+#service-section .service-card .card h5{
+  color: #F58521;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-top: 25px;
+ }
+ #service-section .service-card .card p{
+   color: #000;
+   font-size: 18px;
+ }
+ /* -------------------- */
+ #tap{
+   height: 80vh;
+   background: url(../img/bg-2.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   position: relative;
+ }
+
+#tap:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#tap .question p{
+font-size: 4.2rem;
+color: #fff;
+}
+#tap p{
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+/* ----------------------------- */
+#visual-learning{
+  padding: 50px 0;
+  background: url('../img/gb3.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#visual-learning .cfluid2{
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#visual-learning .left-media .media-body{
+  font-size: 18px;
+  color: #000;
+  text-align: right;
+}
+#visual-learning .left-media img{
+  order: 1;
+}
+#visual-learning .right-media .media-body{
+  font-size: 18px;
+  color: #000;
+  text-align: left;
+}
+#visual-learning .media{
+  margin-top: 45px;
+}
+/* --------------------- */
+#assistant-program{
+  padding: 50px 0;
+  background: url('../img/bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#assistant-program .assit-container{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+#assistant-program .teacher-head{
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+#assistant-program p{
+    font-size: 1.4rem;
+    color: #fff;
+}
+/* ================== */
+#contact-us{
+  padding: 80px 0;
+}
+#contact-us .enquire-form-col
+{
+background-color: #F0EEEF;
+padding-top: 30px;
+}
+#contact-us .contact-title{
+    font-size: 3.2rem;
+    color: #F58521;
+    line-height: 1.1;
+}
+#contact-us .contact-text{
+    font-size: 1.4rem;
+    color: #000;
+}
+#contact-us .enquire-form{
+  padding-top: 50px;
+}
+#contact-us .form-control{
+border-color: #000;
+border-radius: 0%;
+background-color: transparent;
+}
+#contact-us label{
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.boy-img{
+  padding-left: 0;
+}
+.borderline{
+  border-bottom: 4px solid #F58521;
+  width: 80px;
+}
+/* --------------------- */
+.footer {
+  background: #10507C;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.footer p{
+  color: #fff;
+  font-size: 18px;
+}
+.footer a {
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+/* -----media queries---------- */
+@media only screen and (max-width: 1420px) {
+#visual-learning .cfluid2 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#assistant-program .assit-container{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+}
+@media only screen and (max-width: 1024px) {
+#tap .question p {
+  font-size: 2.2rem;
+  color: #fff;
+ }
+  #tap p {
+    font-size: 1.0rem;
+    color: #fff;
+  }
+  .section-title p {
+    font-size: 2.0rem;
+  } 
+  .enquire-form-col{
+    max-width: 100%!important;
+    flex: 0 0 100%;
+  }
+  .boy-img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 990px) {
+  #hero .col-lg-3{
+    border-right: none;
+  }
+  #hero .cfluid2{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .assit-container{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  #hero .col-lg-3{
+    width: 50%;
+  }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  #visual-learning .cfluid2{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .assit-container{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #visual-learning .left-media .media-body{
+    font-size: 14px;
+    text-align: justify;
+  }
+  #visual-learning .right-media .media-body{
+    font-size: 14px;
+    text-align: justify;
+  }
+  #hero h1 {
+    font-size: 3.2rem;
+  }
+  #hero h2 {
+    font-size: 18px;
+  }
+  #visual-learning .media img{
+    margin-left: 0!important;
+  }
+  #assistant-program .teacher-head {
+    font-size: 2.0rem;
+    color: #fff;
+  }
+  #assistant-program p {
+    font-size: 1.0rem;
+    color: #fff;
+  }
+  #visual-learning .media{
+    margin-top: 15px;
+  }
+  #contact-us .contact-title{
+    font-size: 2.0rem;
+  }
+  #contact-us .contact-text {
+    font-size: 1.2rem;
+    color: #000;
+  }
+  .footer p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 662px) {
+  #hero .col-lg-3{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #hero h1 {
+    font-size: 2.2rem;
+ }
+ #hero .logo-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#hero .card-txt {
+  font-size: 1.0rem;
+}
+#service-section .service-card .card p{
+  font-size: 14px;
+}
+#service-section .service-card .card h5 {
+  font-size: 1.2rem;
+}
+}
